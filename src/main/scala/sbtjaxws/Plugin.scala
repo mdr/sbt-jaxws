@@ -20,7 +20,7 @@ object Plugin extends sbt.Plugin {
 
   import SbtJaxWsKeys._
 
-  val jaxWsSettings: Seq[Setting[_]] =
+  val sbtJaxWsSettings: Seq[Setting[_]] =
     Seq(
       javaSource in SbtJaxWs <<= sourceManaged in Compile,
       wsdlFiles := Nil,

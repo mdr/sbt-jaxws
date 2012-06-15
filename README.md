@@ -1,4 +1,9 @@
-The sbt equivalent of the [JAX-WS Maven plug-in][1]. Currently supports calling `wsimport` only, to generate Java from WSDL.
+The sbt equivalent of the [JAX-WS Maven plug-in][1]. It's a bit of a poor relation at the moment: supports calling `wsimport` only, to generate Java from WSDL. 
+
+You should also consider using [scalaxb][2].
+
+Usage
+-----
 
 Put this in your `project/plugins.sbt`:
 
@@ -22,3 +27,4 @@ There is an `SbtJaxWsKeys.otherArgs` for other `wsimport` arguments -- if you us
 please consider adding a new setting to the plug-in and sending a pull request ;-)
 
   [1]: http://jax-ws-commons.java.net/jaxws-maven-plugin/
+  [2]: http://scalaxb.org/sbt-scalaxb

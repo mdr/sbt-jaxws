@@ -8,9 +8,9 @@ And in `build.sbt`:
 
     seq(sbtJaxWsSettings : _*)
 
-    SbtJaxWsKeys.wsdlFiles <+= baseDirectory(_ / "TPService.wsdl")
+    SbtJaxWsKeys.wsdlFiles <+= baseDirectory(_ / "service.wsdl")
 
-    SbtJaxWsKeys.bindingFiles <+= baseDirectory(_ / "TPMessage.xsd")
+    SbtJaxWsKeys.bindingFiles <+= baseDirectory(_ / "message.xsd")
 
     SbtJaxWsKeys.targetVersion := "2.1"
 

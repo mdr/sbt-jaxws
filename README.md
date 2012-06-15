@@ -2,6 +2,10 @@ The sbt equivalent of the [JAX-WS Maven plug-in][1]. Currently supports calling 
 
 Put this in your `project/plugins.sbt`:
 
+    libraryDependencies += "org.glassfish.ha" % "ha-api" % "3.1.8" artifacts(
+      Artifact("ha-api", "jar", "jar")
+    )
+
     addSbtPlugin("com.github.mdr" % "sbt-jaxws" % "0.0.1-SNAPSHOT")
 
 And in `build.sbt`:

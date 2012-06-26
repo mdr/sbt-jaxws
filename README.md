@@ -13,7 +13,7 @@ Put this in your `project/plugins.sbt`:
       Artifact("ha-api", "jar", "jar")
     )
 
-    addSbtPlugin("com.github.mdr" % "sbt-jaxws" % "0.0.1-SNAPSHOT")
+    addSbtPlugin("com.github.mdr" % "sbt-jaxws" % "0.0.1")
 
 Light configuration example (in `build.sbt`):
 
